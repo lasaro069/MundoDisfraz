@@ -1,0 +1,126 @@
+/* Configuración General */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    /* Degradado: Negro al 70% y Escarlata al 30% */
+    background: linear-gradient(to bottom, #000000 70%, #FF2400 100%);
+    background-attachment: fixed;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 4rem;
+    color: #FFD700; /* Dorado para resaltar */
+    margin: 0;
+    text-shadow: 3px 3px #000;
+}
+
+.slogan {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #FF2400; /* Escarlata */
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #FFD700;
+}
+
+/* Cuadrícula de Temas */
+.temas {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.grid-temas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.tema-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #FF2400;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.tema-card:hover {
+    transform: scale(1.05);
+    background: #FF2400;
+    cursor: pointer;
+}
+
+/* Formulario */
+.form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    border: 1px solid #FFD700;
+}
+
+.field {
+    margin-bottom: 15px;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.field input, .field textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: #FF2400;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #b31900;
+}
+
+/* Pie de Página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.9);
+    margin-top: 50px;
+}
