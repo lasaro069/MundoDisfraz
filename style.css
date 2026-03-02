@@ -57,11 +57,14 @@ nav a:hover {
 
 .grid-temas {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns:  repeat(auto-fit, minmax(300px, 1fr));
+/*    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));*/
     gap: 15px;
 }
 
 .tema-card {
+    height: 300px;
+    width: 290px;
     background: rgba(255, 255, 255, 0.1);
     border: 2px solid #FF2400;
     padding: 20px;
@@ -74,6 +77,18 @@ nav a:hover {
     transform: scale(1.05);
     background: #FF2400;
     cursor: pointer;
+}
+
+.tema-card h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #FFD700;
+}
+
+.tema-imagen {
+    height: 60%;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 /* Formulario */
@@ -135,10 +150,15 @@ button:hover {
 
 /* Pie de Página */
 footer {
+    height: 20px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 0.7rem; 
     text-align: center;
     padding: 20px;
     background: rgba(0, 0, 0, 0.9);
-    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+    color: #FFD700;
 }
