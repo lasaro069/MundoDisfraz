@@ -105,35 +105,45 @@
 
         <section id="contacto" class="form-container">
             <h2>¡Contáctanos!</h2>
-            <form>
+            <form id="contact-form">
                 <div class="field">
                     <label>Nombre:</label>
-                    <input type="text" name="nombre" placeholder="Ingresa aquí tu nombre completo" required>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa aquí tu nombre completo" required>
                 </div>
                 <div class="field">
                     <label>Email:</label>
-                    <input type="email" name="email" placeholder="Ingresa tu Email" required>
+                    <input type="email" id="email" name="email" placeholder="Ingresa tu Email" required>
                 </div>
                 <div class="field">
                     <label>Celular:</label>
-                    <input type="tel" name="celular" placeholder="ingresa tu número de celular" required>
+                    <input type="tel" id="tel" name="celular" placeholder="ingresa tu número de celular" required>
                 </div>
                 <div class="field">
                     <label>Asunto:</label>
-                    <input type="text" name="asunto" placeholder="Ingresa un asunto" required>
+                    <input type="text" id="text" name="asunto" placeholder="Ingresa un asunto" required>
                 </div>
                 <div class="field">
                     <label>Mensaje:</label>
-                    <textarea name="mensaje" rows="4" placeholder="Ingresa una descripción detallada de tu requerimiento" required></textarea>
+                    <textarea name="mensaje" id="mensaje" rows="4" placeholder="Ingresa una descripción detallada de tu requerimiento" required></textarea>
                 </div>
-                <button type="submit">Enviar Información</button>
+                <button type="submit" id="btn-enviar">Enviar Información</button>
             </form>
         </section>
+<!-- 
+        <div id="success-container" class="hidden">
+            <div class="success-icon">✓</div>
+            <h2>¡Enviado con éxito!</h2>
+            <p>Gracias por contactarnos. Hemos recibido tu información correctamente.</p>
+            <button onclick="location.reload()">Volver al inicio</button>
+        </div> -->
+    </div>
     </main>
 
     <footer>
         <p>&copy; 2026 Mundo Disfraz. Todos los derechos reservados. | Trabajo realizado por: Daniela Olaya Triana - Luis Santos Rodriguez</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
